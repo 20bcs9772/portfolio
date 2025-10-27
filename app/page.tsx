@@ -1,17 +1,11 @@
-import Hero from "@/components/sections/hero";
-import SkillsTabs from "@/components/sections/skills-tabs";
-import FloatingCTA from "@/components/site/floating-cta";
 import StickyThemeToggle from "@/components/site/sticky-theme-toggle";
-import Footer from "@/components/site/footer";
+import DevOpsPipelineSection from "@/components/sections/devops-pipeline-section";
 
 export default function Page() {
   return (
     <main className="min-h-dvh bg-background text-foreground snap-y snap-mandatory">
       <StickyThemeToggle />
-      <Hero />
-      <SkillsTabs />
-      <FloatingCTA />
-      <Footer />
+      <DevOpsPipelineSection />
     </main>
   );
 }
