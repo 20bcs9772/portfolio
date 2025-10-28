@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "3d-model",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -53,7 +53,6 @@
     "gsap": "^3.13.0",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
-    "mapbox-gl": "^3.15.0",
     "next": "15.2.4",
     "next-themes": "^0.4.6",
     "react": "^19",
@@ -61,45 +60,25 @@
     "react-dom": "^19",
     "react-hook-form": "^7.60.0",
     "react-resizable-panels": "^2.1.7",
-    "recharts": "2.15.4",
     "sonner": "^1.7.4",
-    "swr": "^2.3.6",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.180.0",
     "vaul": "^0.9.9",
-    "ws": "^8.18.3",
     "zod": "3.25.67"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.9",
-    "@types/leaflet": "^1.9.21",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/three": "^0.180.0",
-    "@types/ws": "^8.18.1",
     "postcss": "^8.5",
     "tailwindcss": "^4.1.9",
     "tw-animate-css": "1.3.3",
     "typescript": "^5"
   },
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/20bcs9772/portfolio.git"
-  },
-  "keywords": [
-    "portfolio"
-  ],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/20bcs9772/portfolio/issues"
-  },
-  "homepage": "https://github.com/20bcs9772/portfolio#readme",
   "description": ""
 }
