@@ -1,17 +1,21 @@
 import Hero from "@/components/sections/hero";
-import SkillsTabs from "@/components/sections/skills-tabs";
-import FloatingCTA from "@/components/site/floating-cta";
-import StickyThemeToggle from "@/components/site/sticky-theme-toggle";
+import About from "@/components/sections/about";
+import Skills from "@/components/sections/skills";
+import Projects from "@/components/sections/projects";
 import Footer from "@/components/site/footer";
+import StickyThemeToggle from "@/components/site/sticky-theme-toggle";
+import FloatingCTA from "@/components/site/floating-cta";
 
 export default function Page() {
   return (
-    <main className="min-h-dvh bg-background text-foreground snap-y snap-mandatory">
+    <main className="min-h-dvh bg-background text-foreground">
       <StickyThemeToggle />
       <Hero />
-      <SkillsTabs />
-      <FloatingCTA />
+      <About />
+      <Skills />
+      <Projects />
       <Footer />
+      <FloatingCTA />
     </main>
   );
 }

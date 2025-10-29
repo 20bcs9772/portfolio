@@ -3,8 +3,6 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/next";
-import { Suspense } from "react";
-import { PageLoadingSkeleton } from "@/components/page-loading-skeleton";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -24,7 +22,7 @@ export default function RootLayout({
       className={`${GeistSans.variable} ${GeistMono.variable} antialiased scroll-smooth overflow-x-hidden`}
     >
       <body className="font-sans">
-        <Suspense fallback={<PageLoadingSkeleton />}>{children}</Suspense>
+        {children}
         <Analytics />
       </body>
     </html>
