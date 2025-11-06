@@ -2,6 +2,9 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
+import { BsGithub } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 export const Footer = () => {
   useEffect(() => {
@@ -47,31 +50,19 @@ export const Footer = () => {
       window.removeEventListener("resize", windowResize);
     };
   }, []);
-  // Scroll to top handler
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   return (
     <footer
       id="footer"
       className="relative w-full border-t border-[var(--tech-stack-box-border-color)] overflow-hidden"
     >
-      {/* Back to top button */}
-      <button
-        onClick={scrollToTop}
-        className="absolute top-6 left-6 text-white text-sm px-4 py-2 rounded-md transition"
-      >
-        ← BACK TO TOP
-      </button>
-
       {/* Background blob */}
-      <div className="relative w-full h-screen flex items-end justify-center">
+      <div className="relative w-full h-[80vh] flex items-end justify-center">
         <div className="w-full h-[200px] rounded-full blur-[100px] opacity-70" />
       </div>
 
       {/* Foreground content */}
-      <div className="absolute top-0 w-full h-screen flex flex-col items-center justify-end">
+      <div className="absolute bottom-0 w-full flex flex-col items-center justify-end">
         <div className="flex flex-col items-center justify-end w-full">
           {/* Quote */}
           <div className="text-[#b3b3b3] flex items-center justify-center h-[100px] w-full">
@@ -88,54 +79,35 @@ export const Footer = () => {
               </article>
             </div>
 
-            {/* Social icons */}
             <div className="flex justify-center items-center gap-8 h-[80px] w-full">
-              {/* Instagram */}
               <a
-                href="https://www.instagram.com/pexel_ui/"
+                href="https://www.linkedin.com/in/madhav-bansal-b81349200/"
                 target="_blank"
-                className="social-icon"
-                aria-label="Instagram"
-              >
-                <svg viewBox="0 0 448 512" className="w-7 fill-white">
-                  <path d="M224.1 141c-63.6...z" />
-                </svg>
-              </a>
-
-              {/* LinkedIn */}
-              <a
-                href="https://www.linkedin.com/in/vinod-jangid-b401111a1"
-                target="_blank"
-                className="social-icon"
+                rel="noopener noreferrer"
+                className="social-icon inline-flex items-center justify-center p-2 rounded-full hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                 aria-label="LinkedIn"
               >
-                <svg viewBox="0 0 448 512" className="w-7 fill-white">
-                  <path d="M100.28 448H7.4...z" />
-                </svg>
+                <FaLinkedin className="text-white w-9 h-9" />
               </a>
 
               {/* GitHub */}
               <a
-                href="https://github.com/vinodjangid07"
+                href="https://github.com/20bcs9772"
                 target="_blank"
                 className="social-icon"
                 aria-label="GitHub"
               >
-                <svg viewBox="0 0 496 512" className="w-7 fill-white">
-                  <path d="M165.9 397.4c0 2...z" />
-                </svg>
+                <BsGithub className="text-white w-9 h-9" />
               </a>
 
               {/* Gmail */}
               <a
-                href="mailto:infovinodjangid@gmail.com"
+                href="mailto:bansalmadhav787@gmail.com"
                 target="_blank"
                 className="social-icon"
                 aria-label="Gmail"
               >
-                <svg viewBox="0 0 512 512" className="w-7 fill-white">
-                  <path d="M64 112c-8.8...z" />
-                </svg>
+                <SiGmail className="text-white w-9 h-9" />
               </a>
             </div>
           </div>

@@ -108,3 +108,125 @@ html {
 .shadow-inner-left {
   box-shadow: -10px -15px 5px rgba(0, 0, 0, 0.349) inset;
 }
+
+/* === Custom Cursor Styles === */
+
+.cursor-inner {
+  @apply fixed top-0 left-0 rounded-full pointer-events-none z-[9999];
+  width: 8px;
+  height: 8px;
+  background-color: #00bfff; /* light blue */
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s;
+}
+
+.cursor-outer {
+  @apply fixed top-0 left-0 rounded-full pointer-events-none z-[9998];
+  width: 35px;
+  height: 35px;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s;
+}
+
+/* Hover State */
+.cursor-inner.hover {
+  width: 25px;
+  height: 25px;
+  mix-blend-mode: difference;
+}
+
+.cursor-outer.hover {
+  width: 50px;
+  height: 50px;
+}
+
+/* Jello hover effect */
+.jello {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(-45deg, #0ea5e9, #8b5cf6, #0ea5e9, #8b5cf6);
+  background-size: 400% 400%;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.jello:hover {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #03e6ff, #8000ff);
+  animation: jello-vertical 0.6s both;
+}
+
+/* Jello keyframes */
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+#name {
+  align-items: flex-start;
+  background: linear-gradient(135deg, #0ea5e9, #8b5cf6, #0ea5e9, #8b5cf6);
+  background-clip: text;
+  background-size: 400% 400%;
+  animation: 3s infinite gradient;
+}
+
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.hey {
+  color: #fff;
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: #20222e9f;
+  padding: 5px 10px;
+  border-radius: 20px;
+  left: 10px;
+  top: 5px;
+  opacity: 0;
+}
+
+.popup {
+  animation: 3s linear pop-up;
+}
+
+@keyframes pop-up {
+  from {
+    bottom: -50px;
+    left: 50px;
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

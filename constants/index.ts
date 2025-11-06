@@ -1,11 +1,5 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
+import { BsGithub } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 
 export const SKILL_DATA = [
   {
@@ -90,14 +84,14 @@ export const SKILL_DATA = [
 
 export const SOCIALS = [
   {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com",
+    name: "Github",
+    icon: BsGithub,
+    link: "https://github.com/20bcs9772",
   },
   {
-    name: "Twitter",
-    icon: RxTwitterLogo,
-    link: "https://twitter.com",
+    name: "LinkedIn",
+    icon: FaLinkedin,
+    link: "https://www.linkedin.com/in/madhav-bansal-b81349200/",
   },
 ] as const;
 
@@ -252,93 +246,6 @@ export const OTHER_SKILL = [
   },
 ] as const;
 
-export const PROJECTS = [
-  {
-    title: "Modern Next.js 14 Portfolio",
-    description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
-    image: "/projects/project-1.png",
-    link: "https://example.com",
-  },
-  {
-    title: "Interactive Cards Portfolio",
-    description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
-    image: "/projects/project-2.png",
-    link: "https://example.com",
-  },
-  {
-    title: "Space Themed Website",
-    description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
-    image: "/projects/project-3.png",
-    link: "https://example.com",
-  },
-] as const;
-
-export const FOOTER_DATA = [
-  {
-    title: "Community",
-    data: [
-      {
-        name: "YouTube",
-        icon: FaYoutube,
-        link: "https://youtube.com",
-      },
-      {
-        name: "GitHub",
-        icon: RxGithubLogo,
-        link: "https://github.com",
-      },
-      {
-        name: "Discord",
-        icon: RxDiscordLogo,
-        link: "https://discord.com",
-      },
-    ],
-  },
-  {
-    title: "Social Media",
-    data: [
-      {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com",
-      },
-      {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://twitter.com",
-      },
-      {
-        name: "Linkedin",
-        icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
-      },
-    ],
-  },
-  {
-    title: "About",
-    data: [
-      {
-        name: "Become Sponsor",
-        icon: null,
-        link: "https://youtube.com",
-      },
-      {
-        name: "Learning about me",
-        icon: null,
-        link: "https://example.com",
-      },
-      {
-        name: "Contact Me",
-        icon: null,
-        link: "mailto:contact@example.com",
-      },
-    ],
-  },
-] as const;
-
 export const NAV_LINKS = [
   {
     title: "About me",
@@ -357,3 +264,45 @@ export const NAV_LINKS = [
 export const LINKS = {
   sourceCode: "https://github.com/20bcs9772/portfolio",
 };
+
+export const cardImages = [
+  "projects/1.png",
+  "projects/2.png",
+  "projects/3.png",
+  "projects/4.png",
+];
+
+export const projectData = [
+  {
+    name: "Restaurant Website | Punjab Ports",
+    description:
+      "A full-stack restaurant e-commerce website enabling users to create accounts, browse menus, and place online orders with COD or Razorpay payments.",
+    skills: ["Frontend Architecture", "State Management", "Accessibility"],
+    tech: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    link: "https://punjabports.com",
+  },
+  {
+    name: "Maritime Website | Nautilus Times",
+    description:
+      "A modern and responsive platform for Nautilus Times using React, Node.js, Express, and MongoDB.",
+    skills: ["Full Stack", "Payment Gateway Integration", "Monetization"],
+    tech: ["React", "Node.js", "Express.js", "Nodemailer"],
+    link: "https://nautilustimes.com",
+  },
+  {
+    name: "Company Website | Oceaniek Technologies",
+    description:
+      "Developed a modern, responsive company website for Oceaniek Technologies using Next.js.",
+    skills: ["Frontend", "Animation", "Responsive Design"],
+    tech: ["Next.js", "Canvas", "Shadcn"],
+    link: "https://oceaniektechnologies.com",
+  },
+  {
+    name: "OTT Platform | Oceaniek Stream",
+    description:
+      "Developed an OTT streaming platform featuring movies, series, and exclusive content, optimized for mobile and TV.",
+    skills: ["Full Stack", "Integrations", "Payments"],
+    tech: ["Next.js", "PostgreSQL", "Razorpay"],
+    link: "https://oceaniekstream.com",
+  },
+];

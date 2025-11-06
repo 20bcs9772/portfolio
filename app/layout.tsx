@@ -9,6 +9,8 @@ import { siteConfig } from "@/config";
 import { cn } from "@/lib/utils";
 
 import "./globals.css";
+import CustomCursor from "@/components/sub/custom-cursor";
+import AOSInit from "@/components/sub/aos-init";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,10 +29,12 @@ export default function RootLayout({ children }: PropsWithChildren) {
           inter.className
         )}
       >
+        <AOSInit />
         <StarsCanvas />
         <Navbar />
         {children}
         <Footer />
+        <CustomCursor />
       </body>
     </html>
   );
