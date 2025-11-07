@@ -309,7 +309,7 @@ export class CardStreamController {
     viewBtn.rel = "noopener noreferrer";
     viewBtn.textContent = "View";
     viewBtn.className =
-      "absolute top-2 right-2 z-[6] px-3 py-1 rounded-full text-xs font-semibold bg-white/90 hover:bg-white text-gray-900 shadow ring-1 ring-black/10";
+      "absolute top-2 right-2 z-[6] px-3 py-1 rounded-full text-xs font-semibold bg-white/90 hover:bg-white text-purple-900 shadow ring-1 ring-black/10 border border-purple-900";
     normalCard.appendChild(cardImage);
     normalCard.appendChild(viewBtn);
 

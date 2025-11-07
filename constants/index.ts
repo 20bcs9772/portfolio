@@ -270,6 +270,7 @@ export const cardImages = [
   "projects/2.png",
   "projects/3.png",
   "projects/4.png",
+  "projects/5.png",
 ];
 
 export const projectData = [
@@ -278,7 +279,7 @@ export const projectData = [
     description:
       "A full-stack restaurant e-commerce website enabling users to create accounts, browse menus, and place online orders with COD or Razorpay payments.",
     skills: ["Frontend Architecture", "State Management", "Accessibility"],
-    tech: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    tech: ["React", "Payload CMS", "MongoDB", "Tailwind CSS"],
     link: "https://punjabports.com",
   },
   {
@@ -304,5 +305,13 @@ export const projectData = [
     skills: ["Full Stack", "Integrations", "Payments"],
     tech: ["Next.js", "PostgreSQL", "Razorpay"],
     link: "https://oceaniekstream.com",
+  },
+  {
+    name: "Medical Tourism Facilitator | The Healing Groove",
+    description:
+      "Developed a fully responsive medical tourism platform for The Healing Groove using Next.js.",
+    skills: ["Full Stack", "Responsive", "User Interface"],
+    tech: ["Next.js", "Payload CMS", "VPS Hosting"],
+    link: "https://thehealinggroove.com",
   },
 ];
